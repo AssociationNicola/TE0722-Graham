@@ -74,22 +74,7 @@ set_property "ip_repo_paths" "[file normalize "$origin_dir/ip_repo/TE0722_IP"]" 
 # Set 'sources_1' fileset object
 set obj [get_filesets sources_1]
 set files [list \
- "[file normalize "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/PS_PL.bd"]"\
- "[file normalize "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/hdl/PS_PL_wrapper.v"]"\
  "[file normalize "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/ip/n3_te0722_0/n3_te0722_0.xci"]"\
- "[file normalize "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_0_vivado.coe"]"\
- "[file normalize "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_1_vivado.coe"]"\
- "[file normalize "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_2_vivado.coe"]"\
- "[file normalize "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_3_vivado.coe"]"\
- "[file normalize "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_4_vivado.coe"]"\
- "[file normalize "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_5_vivado.coe"]"\
- "[file normalize "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_6_vivado.coe"]"\
- "[file normalize "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_7_vivado.coe"]"\
- "[file normalize "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_8_vivado.coe"]"\
- "[file normalize "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_9_vivado.coe"]"\
- "[file normalize "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_dist_mem_gen_v8_0_0_vivado.coe"]"\
- "[file normalize "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_dist_mem_gen_v8_0_1_vivado.coe"]"\
- "[file normalize "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_dist_mem_gen_v8_0_2_vivado.coe"]"\
 ]
 add_files -norecurse -fileset $obj $files
 
