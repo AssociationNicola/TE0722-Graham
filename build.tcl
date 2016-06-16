@@ -69,118 +69,113 @@ if {[string equal [get_filesets -quiet sources_1] ""]} {
 
 # Set IP repository paths
 set obj [get_filesets sources_1]
-set_property "ip_repo_paths" "[file normalize "$origin_dir/../../TE0722_IP"]" $obj
+set_property "ip_repo_paths" "[file normalize "$origin_dir/ip_repo/TE0722_IP"]" $obj
 
 # Set 'sources_1' fileset object
 set obj [get_filesets sources_1]
 set files [list \
- "[file normalize "$origin_dir/../TE0722/TE0722.srcs/sources_1/bd/PS_PL/PS_PL.bd"]"\
- "[file normalize "$origin_dir/../TE0722/TE0722.srcs/sources_1/bd/PS_PL/hdl/PS_PL_wrapper.v"]"\
- "[file normalize "$origin_dir/../../../Dropbox/SysgenOutput/TE0722/ip_catalog/n3_te0722.srcs/sources_1/ip/n3_te0722_0/n3_te0722_0.xci"]"\
- "[file normalize "$origin_dir/../TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_0_vivado.coe"]"\
- "[file normalize "$origin_dir/../TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_1_vivado.coe"]"\
- "[file normalize "$origin_dir/../TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_2_vivado.coe"]"\
- "[file normalize "$origin_dir/../TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_3_vivado.coe"]"\
- "[file normalize "$origin_dir/../TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_4_vivado.coe"]"\
- "[file normalize "$origin_dir/../TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_5_vivado.coe"]"\
- "[file normalize "$origin_dir/../TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_6_vivado.coe"]"\
- "[file normalize "$origin_dir/../TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_7_vivado.coe"]"\
- "[file normalize "$origin_dir/../TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_8_vivado.coe"]"\
- "[file normalize "$origin_dir/../TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_9_vivado.coe"]"\
- "[file normalize "$origin_dir/../TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_dist_mem_gen_v8_0_0_vivado.coe"]"\
- "[file normalize "$origin_dir/../TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_dist_mem_gen_v8_0_1_vivado.coe"]"\
- "[file normalize "$origin_dir/../TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_dist_mem_gen_v8_0_2_vivado.coe"]"\
+ "[file normalize "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/PS_PL.bd"]"\
+ "[file normalize "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/hdl/PS_PL_wrapper.v"]"\
+ "[file normalize "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/ip/n3_te0722_0/n3_te0722_0.xci"]"\
+ "[file normalize "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_0_vivado.coe"]"\
+ "[file normalize "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_1_vivado.coe"]"\
+ "[file normalize "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_2_vivado.coe"]"\
+ "[file normalize "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_3_vivado.coe"]"\
+ "[file normalize "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_4_vivado.coe"]"\
+ "[file normalize "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_5_vivado.coe"]"\
+ "[file normalize "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_6_vivado.coe"]"\
+ "[file normalize "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_7_vivado.coe"]"\
+ "[file normalize "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_8_vivado.coe"]"\
+ "[file normalize "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_9_vivado.coe"]"\
+ "[file normalize "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_dist_mem_gen_v8_0_0_vivado.coe"]"\
+ "[file normalize "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_dist_mem_gen_v8_0_1_vivado.coe"]"\
+ "[file normalize "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_dist_mem_gen_v8_0_2_vivado.coe"]"\
 ]
 add_files -norecurse -fileset $obj $files
 
 # Set 'sources_1' fileset file properties for remote files
-set file "$origin_dir/../TE0722/TE0722.srcs/sources_1/bd/PS_PL/PS_PL.bd"
-set file [file normalize $file]
-set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
-if { ![get_property "is_locked" $file_obj] } {
-  set_property "generate_synth_checkpoint" "0" $file_obj
-}
 
-set file "$origin_dir/../../../Dropbox/SysgenOutput/TE0722/ip_catalog/n3_te0722.srcs/sources_1/ip/n3_te0722_0/n3_te0722_0.xci"
+
+set file "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/ip/n3_te0722_0/n3_te0722_0.xci"
 set file [file normalize $file]
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 if { ![get_property "is_locked" $file_obj] } {
   set_property "synth_checkpoint_mode" "Singular" $file_obj
 }
 
-set file "$origin_dir/../TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_0_vivado.coe"
+set file "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_0_vivado.coe"
 set file [file normalize $file]
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property "used_in_simulation" "0" $file_obj
 set_property "used_in_synthesis" "0" $file_obj
 
-set file "$origin_dir/../TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_1_vivado.coe"
+set file "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_1_vivado.coe"
 set file [file normalize $file]
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property "used_in_simulation" "0" $file_obj
 set_property "used_in_synthesis" "0" $file_obj
 
-set file "$origin_dir/../TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_2_vivado.coe"
+set file "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_2_vivado.coe"
 set file [file normalize $file]
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property "used_in_simulation" "0" $file_obj
 set_property "used_in_synthesis" "0" $file_obj
 
-set file "$origin_dir/../TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_3_vivado.coe"
+set file "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_3_vivado.coe"
 set file [file normalize $file]
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property "used_in_simulation" "0" $file_obj
 set_property "used_in_synthesis" "0" $file_obj
 
-set file "$origin_dir/../TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_4_vivado.coe"
+set file "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_4_vivado.coe"
 set file [file normalize $file]
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property "used_in_simulation" "0" $file_obj
 set_property "used_in_synthesis" "0" $file_obj
 
-set file "$origin_dir/../TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_5_vivado.coe"
+set file "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_5_vivado.coe"
 set file [file normalize $file]
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property "used_in_simulation" "0" $file_obj
 set_property "used_in_synthesis" "0" $file_obj
 
-set file "$origin_dir/../TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_6_vivado.coe"
+set file "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_6_vivado.coe"
 set file [file normalize $file]
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property "used_in_simulation" "0" $file_obj
 set_property "used_in_synthesis" "0" $file_obj
 
-set file "$origin_dir/../TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_7_vivado.coe"
+set file "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_7_vivado.coe"
 set file [file normalize $file]
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property "used_in_simulation" "0" $file_obj
 set_property "used_in_synthesis" "0" $file_obj
 
-set file "$origin_dir/../TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_8_vivado.coe"
+set file "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_8_vivado.coe"
 set file [file normalize $file]
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property "used_in_simulation" "0" $file_obj
 set_property "used_in_synthesis" "0" $file_obj
 
-set file "$origin_dir/../TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_9_vivado.coe"
+set file "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_9_vivado.coe"
 set file [file normalize $file]
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property "used_in_simulation" "0" $file_obj
 set_property "used_in_synthesis" "0" $file_obj
 
-set file "$origin_dir/../TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_dist_mem_gen_v8_0_0_vivado.coe"
+set file "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_dist_mem_gen_v8_0_0_vivado.coe"
 set file [file normalize $file]
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property "used_in_simulation" "0" $file_obj
 set_property "used_in_synthesis" "0" $file_obj
 
-set file "$origin_dir/../TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_dist_mem_gen_v8_0_1_vivado.coe"
+set file "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_dist_mem_gen_v8_0_1_vivado.coe"
 set file [file normalize $file]
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property "used_in_simulation" "0" $file_obj
 set_property "used_in_synthesis" "0" $file_obj
 
-set file "$origin_dir/../TE0722/TE0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_dist_mem_gen_v8_0_2_vivado.coe"
+set file "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_dist_mem_gen_v8_0_2_vivado.coe"
 set file [file normalize $file]
 set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
 set_property "used_in_simulation" "0" $file_obj
@@ -203,16 +198,16 @@ if {[string equal [get_filesets -quiet constrs_1] ""]} {
 set obj [get_filesets constrs_1]
 
 # Add/Import constrs file and set constrs file properties
-set file "[file normalize "$origin_dir/../TE0722/TE0722.srcs/constrs_1/imports/VivadoProject/n3_te0722a5_clock.xdc"]"
+set file "[file normalize "$origin_dir/src/Constraints/n3_te0722a5_clock.xdc"]"
 set file_added [add_files -norecurse -fileset $obj $file]
-set file "$origin_dir/../TE0722/TE0722.srcs/constrs_1/imports/VivadoProject/n3_te0722a5_clock.xdc"
+set file "$origin_dir/src/Constraints/n3_te0722a5_clock.xdc"
 set file [file normalize $file]
 set file_obj [get_files -of_objects [get_filesets constrs_1] [list "*$file"]]
 set_property "file_type" "XDC" $file_obj
 
 # Set 'constrs_1' fileset properties
-set obj [get_filesets constrs_1]
-set_property "target_constrs_file" "$orig_proj_dir/TE0722.srcs/constrs_1/imports/VivadoProject/n3_te0722a5_clock.xdc" $obj
+#set obj [get_filesets constrs_1]
+#set_property "target_constrs_file" "$orig_proj_dir/TE0722.srcs/constrs_1/imports/VivadoProject/n3_te0722a5_clock.xdc" $obj
 
 # Create 'sim_1' fileset (if not found)
 if {[string equal [get_filesets -quiet sim_1] ""]} {
@@ -255,3 +250,11 @@ set_property "part" "xc7z010clg225-1" $obj
 current_run -implementation [get_runs impl_1]
 
 puts "INFO: Project created:TE0722"
+
+# Create block design
+ source $origin_dir/src/bd/PS_PL.tcl
+
+ # Generate the wrapper
+ set design_name [get_bd_designs]
+ make_wrapper -files [get_files $design_name.bd] -top -import
+
