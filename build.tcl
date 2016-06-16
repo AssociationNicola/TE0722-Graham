@@ -51,7 +51,7 @@
 set origin_dir [file dirname [info script]]
 
 # Create project
-create_project TE0722 $origin_dir/TE0722
+create_project TE0722 $origin_dir/TE0722 -force
 
 # Set the directory path for the new project
 set proj_dir [get_property directory [current_project]]
@@ -88,91 +88,8 @@ if { ![get_property "is_locked" $file_obj] } {
   set_property "synth_checkpoint_mode" "Singular" $file_obj
 }
 
-set file "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_0_vivado.coe"
-set file [file normalize $file]
-set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
-set_property "used_in_simulation" "0" $file_obj
-set_property "used_in_synthesis" "0" $file_obj
-
-set file "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_1_vivado.coe"
-set file [file normalize $file]
-set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
-set_property "used_in_simulation" "0" $file_obj
-set_property "used_in_synthesis" "0" $file_obj
-
-set file "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_2_vivado.coe"
-set file [file normalize $file]
-set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
-set_property "used_in_simulation" "0" $file_obj
-set_property "used_in_synthesis" "0" $file_obj
-
-set file "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_3_vivado.coe"
-set file [file normalize $file]
-set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
-set_property "used_in_simulation" "0" $file_obj
-set_property "used_in_synthesis" "0" $file_obj
-
-set file "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_4_vivado.coe"
-set file [file normalize $file]
-set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
-set_property "used_in_simulation" "0" $file_obj
-set_property "used_in_synthesis" "0" $file_obj
-
-set file "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_5_vivado.coe"
-set file [file normalize $file]
-set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
-set_property "used_in_simulation" "0" $file_obj
-set_property "used_in_synthesis" "0" $file_obj
-
-set file "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_6_vivado.coe"
-set file [file normalize $file]
-set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
-set_property "used_in_simulation" "0" $file_obj
-set_property "used_in_synthesis" "0" $file_obj
-
-set file "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_7_vivado.coe"
-set file [file normalize $file]
-set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
-set_property "used_in_simulation" "0" $file_obj
-set_property "used_in_synthesis" "0" $file_obj
-
-set file "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_8_vivado.coe"
-set file [file normalize $file]
-set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
-set_property "used_in_simulation" "0" $file_obj
-set_property "used_in_synthesis" "0" $file_obj
-
-set file "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_blk_mem_gen_v8_2_9_vivado.coe"
-set file [file normalize $file]
-set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
-set_property "used_in_simulation" "0" $file_obj
-set_property "used_in_synthesis" "0" $file_obj
-
-set file "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_dist_mem_gen_v8_0_0_vivado.coe"
-set file [file normalize $file]
-set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
-set_property "used_in_simulation" "0" $file_obj
-set_property "used_in_synthesis" "0" $file_obj
-
-set file "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_dist_mem_gen_v8_0_1_vivado.coe"
-set file [file normalize $file]
-set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
-set_property "used_in_simulation" "0" $file_obj
-set_property "used_in_synthesis" "0" $file_obj
-
-set file "$origin_dir/ip_repo/TE0722_IP/ip_catalog/n3_te0722.srcs/sources_1/bd/PS_PL/ip/PS_PL_n3_te0722_0_0/n3_te0722_dist_mem_gen_v8_0_2_vivado.coe"
-set file [file normalize $file]
-set file_obj [get_files -of_objects [get_filesets sources_1] [list "*$file"]]
-set_property "used_in_simulation" "0" $file_obj
-set_property "used_in_synthesis" "0" $file_obj
 
 
-# Set 'sources_1' fileset file properties for local files
-# None
-
-# Set 'sources_1' fileset properties
-set obj [get_filesets sources_1]
-set_property "top" "PS_PL_wrapper" $obj
 
 # Create 'constrs_1' fileset (if not found)
 if {[string equal [get_filesets -quiet constrs_1] ""]} {
@@ -203,9 +120,6 @@ if {[string equal [get_filesets -quiet sim_1] ""]} {
 set obj [get_filesets sim_1]
 # Empty (no sources present)
 
-# Set 'sim_1' fileset properties
-set obj [get_filesets sim_1]
-set_property "top" "PS_PL_wrapper" $obj
 
 # Create 'synth_1' run (if not found)
 if {[string equal [get_runs -quiet synth_1] ""]} {
