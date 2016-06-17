@@ -71,6 +71,8 @@ if {[string equal [get_filesets -quiet sources_1] ""]} {
 set obj [get_filesets sources_1]
 set_property "ip_repo_paths" "[file normalize "$origin_dir/ip_repo/TE0722_IP"]" $obj
 
+update_ip_catalog
+
 # Set 'sources_1' fileset object
 set obj [get_filesets sources_1]
 set files [list \
